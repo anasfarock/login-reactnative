@@ -82,6 +82,10 @@ export default function RegisterScreen({ navigation }) {
             <TouchableOpacity style={styles.button} onPress={handleSubmit}>
               <Text style={styles.buttonText}>Register</Text>
             </TouchableOpacity>
+
+            <TouchableOpacity onPress={() => navigation.navigate('Login')}>
+              <Text style={styles.linkText}>Already have an account? Login here</Text>
+            </TouchableOpacity>
           </>
         )}
       </Formik>
@@ -130,5 +134,10 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     color: '#fdfdfd',
     fontSize: 16,
+  },
+  linkText: {
+    color: '#00cc99',
+    marginTop: 20,
+    textAlign: 'center',
   },
 });
