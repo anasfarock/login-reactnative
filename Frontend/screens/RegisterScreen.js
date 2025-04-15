@@ -2,12 +2,12 @@ import React from 'react';
 import { View, Text, TextInput, StyleSheet, TouchableOpacity, Alert } from 'react-native';
 import { Formik } from 'formik';
 import * as yup from 'yup';
-import axios from 'axios';
+import API from '../axios'; 
 
 export default function RegisterScreen({ navigation }) {
   const handleSubmit = async (values) => {
     try {
-      const resp = await axios.post('http://localhost:8080/v1/api/user', values);
+      const resp = await API.post('/user', values);
       const { data } = resp;
 
       if (data) {
