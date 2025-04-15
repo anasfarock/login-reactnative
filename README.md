@@ -1,4 +1,4 @@
-## 📱 React Native Login & Register App with Node.js Backend
+## 📱 React Native Login & Register with Node.js Backend
 
 This project is a full-stack login and registration system built using:
 
